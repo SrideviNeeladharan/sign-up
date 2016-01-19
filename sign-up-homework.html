@@ -1,0 +1,220 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script>
+  $(function() {
+    //$( "#datepicker" ).datepicker();
+  });
+  </script>
+ <!-- jQuery CDN link....  
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	 -->
+		<meta charset="UTF-8">	
+		<title>HTML5: Week One</title>  
+		<!-- link to an external style sheet (best practice with style sheet)-->
+		<link href="css/styles.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body class="page"><!-- everything that is visual goes in the body tag  -->
+		<header>
+			<!-- the "banner" area or title of the page-->
+			<h1>HTML5: Week One</h1> <!-- only h1 per page (for SEO purposes) --> 	
+		</header>
+		<nav class="nav1"> 
+			<ul>
+				<!-- these links are relative paths -->
+				<li> <a href="#">home</a></li>
+				<li> <a href="#">gallery</a></li>
+				<li> <a href="sign-up.html">Sign Up Here</a></li>
+				<li> <a href="#">Mobile Site</a></li>
+				<li> <a href="http://www.google.com">Google</a></li>
+			</ul>
+		</nav>
+		<div id="mainContent">
+            <h3>If you want to connect with the community and post content, please create an account.</h3>
+            
+			<!-- A Simple Form    -->
+          <form id="sign-up" method="post" action="#">
+            <fieldset>
+              <h2>Become a Member</h2>
+                <ul>
+                  
+                  <li>
+                    <label>Name</label>
+                    <input id="f-name-label" type="text" name="first-name" placeholder="First name" required/>
+                    <input id="l-name-label" type="text" name="last-name" placeholder="Last name" required/>  
+                  </li>
+                  <li>
+                    <label>Gender</label>
+                    <input type="radio" name="gender" value="Male"/>Male
+                    <input type="radio" name="gender" value="Female" checked/>Female
+                  </li>
+                  <li>
+                    <label>Date of Birth:</label>
+                    <label>Date</label>
+                    <select name="day">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                      <option value="13">13</option>
+                      <option value="14">14</option>
+                      <option value="15">15</option>
+                      <option value="16">16</option>
+                    </select>
+                    <label>Month</label>
+                    <select name="month">
+                      <option value="Jan">Jan</option>
+                      <option value="Feb">Feb</option>
+                      <option value="March">March</option>
+                      <option value="Apr">April</option>
+                      <option value="May">May</option>
+                      <option value="June">June</option>
+                      <option value="July">July</option>
+                      <option value="Aug">Aug</option>
+                      <option value="Sep">Sep</option>
+                      <option value="Oct">Oct</option>
+                      <option value="Nov">Nov</option>
+                      <option value="Dec">Dec</option> 
+                    </select>
+                    <label>Year</label>
+                    <select name="Year">
+                      <option value="1970">1970</option>
+                      <option value="1971">1971</option>
+                      <option value="1972">1972</option>
+                      <option value="1973">1973</option>
+                      <option value="1974">1974</option>
+                      <option value="1975">1975</option>
+                      <option value="1976">1976</option>
+                      <option value="1977">1977</option>
+                      <option value="1978">1978</option>
+                    </select>
+                  </li>
+                  <li>
+                     <label>Address</label>
+                      <input id="address" type="text" placeholder="Street name" name="streetname"/>
+                      <input id="city" type= "text" placeholder="City name" name="cityname"/>
+                      <select id="state" name="state">
+                          <option value=""     >State</option>
+                          <option value="AK"   > AK</option>
+                          <option value="AL"   > AL</option>
+                          <option value="AR"   > AR</option>
+                          <option value="AZ"   > AZ</option>
+                          <option value="CA"   > CA</option>
+                          <option value="CO"   > CO</option>
+                          <option value="CT"   > CT</option>
+                          <option value="DC"   > DC</option>
+                          <option value="DE"   > DE</option>
+                          <option value="FL"   > FL</option>
+                          <option value="GA"   > GA</option>
+                          <option value="GU"   > GU</option>
+                          <option value="HI"   > HI</option>
+                          <option value="IA"   > IA</option>
+                          <option value="ID"   > ID</option>
+                          <option value="IL"   > IL</option>
+                          <option value="IN"   > IN</option>
+                          <option value="KS"   > KS</option>
+                          <option value="KY"   > KY</option>
+                          <option value="LA"   > LA</option>
+                          <option value="MA"   > MA</option>
+                          <option value="MD"   > MD</option>
+                          <option value="ME"   > ME</option>
+                          <option value="MI"   > MI</option>
+                          <option value="MN"   > MN</option>
+                          <option value="MO"   > MO</option>
+                          <option value="MS"   > MS</option>
+                          <option value="MT"   > MT</option>
+                          <option value="NC"   > NC</option>
+                          <option value="ND"   > ND</option>
+                          <option value="NE"   > NE</option>
+                          <option value="NH"   > NH</option>
+                          <option value="NJ"   > NJ</option>
+                          <option value="NM"   > NM</option>
+                          <option value="NV"   > NV</option>
+                          <option value="NY"   > NY</option>
+                          <option value="OH"   > OH</option>
+                          <option value="OK"   > OK</option>
+                          <option value="OR"   > OR</option>
+                          <option value="PA"   > PA</option>
+                          <option value="RI"   > RI</option>
+                          <option value="SC"   > SC</option>
+                          <option value="SD"   > SD</option>
+                          <option value="TN"   > TN</option>
+                          <option value="TX"   > TX</option>
+                          <option value="UT"   > UT</option>
+                          <option value="VA"   > VA</option>
+                          <option value="VT"   > VT</option>
+                          <option value="WA"   > WA</option>
+                          <option value="WI"   > WI</option>
+                          <option value="WV"   > WV</option>
+                          <option value="WY"   > WY</option>
+                        </select>
+                      <input id="zcode" type="tel"  required placeholder="Zipcode" name="zipcode" pattern="^[0-9]{5}" />
+                  </li>
+                  <li>
+                    <label>Contact Information</label>
+                      <input id="email" type="email" placeholder="E-mail(ronpark@yahoo.com)" name="emailid" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required/>
+                      <input id="telephone" type="tel" placeholder="Phone Number" name="phonenumber" maxlength="15"/>
+                      <input id="cellphone" type="tel" placeholder="Cell Phone(Optional)" name="cellnumber" maxlength="15"/>                
+                  </li>
+                  <li>
+                    <label>How would you like to be contacted</label>
+                      <select>
+                        <option value="">Choose</option>
+                        <option value="TelePhone">TelePhone</option>
+                        <option value="CellPhone">CellPhone</option>
+                        <option value="EMail">Email</option>
+                      </select>
+                  </li>
+                  <li>
+                    <label>How did you hear about us</label>
+                      <select>
+                        <option value="">Choose</option>
+                        <option value="Referral">Referral</option>
+                        <option value="Magazine">Magazine</option>
+                        <option value="TV Promotions">Tv Promotions</option>
+                        <option value="Other">Other</option>
+                      </select>
+                  </li>
+                  <li>
+                    <label>Choose a Username</label>
+                    <input type="text" name="user" placeholder="Username" required/>
+                  </li>
+                  <li>
+                    <label>Choose a Password</label>
+                    <input type="password" placeholder="Enter your password" pattern="(?=.*\d)(?=.*[A-Z])(?=.*[a-z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required/>
+                  </li>
+                  <li>
+                    <label>Re-enter Password</label>
+                    <input type="password" placeholder="Re-Enter your password" pattern="(?=.*\d)(?=.*[A-Z])(?=.*[a-z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required/>
+                  </li>
+                  
+                </ul>
+              <input type="submit" name="submit" value="Join Us"/>
+            </fieldset>
+          </form>
+		
+            
+            	
+
+        </div><!-- closing maincContent div tag -->
+		
+		
+        <!--  This is the footer section, only footer stuff -->
+		<footer>
+			<p>&copy; copyright 2015</p>
+			
+		</footer>
+
+	</body>
+</html>
