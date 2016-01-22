@@ -1,12 +1,12 @@
 <!doctype html>
 <html>
 	<head>
-		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
   <script>
   $(function() {
-    //$( "#datepicker" ).datepicker();
+    $( "#datepicker" ).datepicker();
   });
   </script>
  <!-- jQuery CDN link....  
@@ -52,58 +52,18 @@
                     <input type="radio" name="gender" value="Female" checked/>Female
                   </li>
                   <li>
-                    <label>Date of Birth:</label>
-                    <label>Date</label>
-                    <select name="day">
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                      <option value="7">7</option>
-                      <option value="8">8</option>
-                      <option value="9">9</option>
-                      <option value="10">10</option>
-                      <option value="11">11</option>
-                      <option value="12">12</option>
-                      <option value="13">13</option>
-                      <option value="14">14</option>
-                      <option value="15">15</option>
-                      <option value="16">16</option>
-                    </select>
-                    <label>Month</label>
-                    <select name="month">
-                      <option value="Jan">Jan</option>
-                      <option value="Feb">Feb</option>
-                      <option value="March">March</option>
-                      <option value="Apr">April</option>
-                      <option value="May">May</option>
-                      <option value="June">June</option>
-                      <option value="July">July</option>
-                      <option value="Aug">Aug</option>
-                      <option value="Sep">Sep</option>
-                      <option value="Oct">Oct</option>
-                      <option value="Nov">Nov</option>
-                      <option value="Dec">Dec</option> 
-                    </select>
-                    <label>Year</label>
-                    <select name="Year">
-                      <option value="1970">1970</option>
-                      <option value="1971">1971</option>
-                      <option value="1972">1972</option>
-                      <option value="1973">1973</option>
-                      <option value="1974">1974</option>
-                      <option value="1975">1975</option>
-                      <option value="1976">1976</option>
-                      <option value="1977">1977</option>
-                      <option value="1978">1978</option>
-                    </select>
+                    <label>Date of Birth</label>
+                    <input type="date" name="date" id="datepicker" />
                   </li>
+                  
                   <li>
                      <label>Address</label>
                       <input id="address" type="text" placeholder="Street name" name="streetname"/>
                       <input id="city" type= "text" placeholder="City name" name="cityname"/>
+                  </li>
+                  <li>
+                    <label>Zipcode</label>
+                      <input id="zcode" type="tel"  required placeholder="Zipcode" name="zipcode" pattern="^[0-9]{5}" />
                       <select id="state" name="state">
                           <option value=""     >State</option>
                           <option value="AK"   > AK</option>
@@ -159,7 +119,6 @@
                           <option value="WV"   > WV</option>
                           <option value="WY"   > WY</option>
                         </select>
-                      <input id="zcode" type="tel"  required placeholder="Zipcode" name="zipcode" pattern="^[0-9]{5}" />
                   </li>
                   <li>
                     <label>Contact Information</label>
